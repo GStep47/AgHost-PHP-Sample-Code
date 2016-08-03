@@ -14,6 +14,6 @@ if (strlen($enteredzip) <5) {
 setcookie ("WeatherZip", $enteredzip, time()+120000000, "/"); //about 3.8 years
 
 //redirect to index.php
-header("location:/../services/index.php");
+header("location:index.php");
 
 ?>
