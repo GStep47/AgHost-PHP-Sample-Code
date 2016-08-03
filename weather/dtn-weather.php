@@ -1,4 +1,3 @@
-
 <!-- Style for weather component -->
 <style type="text/css">
 .dtn-weather {
@@ -51,7 +50,7 @@
     min-width: 50%;
 }
 </style>
-			
+		
 <?php	
 
 //NOTE: $token is determined by dtn-weather-get-token.php, which must be included before this file.
@@ -107,7 +106,7 @@ echo"\n" . '			<div style="clear:both"></div>';
 echo"\n" . '			';
 echo"\n" . '			<div>';
 echo"\n" . '				<div class="dtn-conditions-left">';
-echo"\n" . '						<img src="/img/wxiconsm/' . $result[4] . '.png">';
+echo"\n" . '						<img src="img/wxiconsm/' . $result[4] . '.png">';
 echo"\n" . '						<div class="dtn-conditions-desc">';
 echo $result[2];
 echo"\n" . '							<br>';
@@ -139,7 +138,7 @@ $resultfc = $xml->xpath('/tns:RequestAndResponse/response/tns:StationWeather/Dai
 echo"\n" . '			<p>';
 echo date('D', strtotime($resultfc[2]));
 echo"\n" . '<br>';
-echo"\n" . '			<img src="/img/wxicons/' . $resultfc[5] . '.png">';
+echo"\n" . '			<img src="img/wxicons/' . $resultfc[5] . '.png">';
 echo"\n" . '			<br>';
 echo $resultfc[4];
 echo"\n" . '			<br>';
@@ -160,7 +159,7 @@ $resultfc = $xml->xpath('/tns:RequestAndResponse/response/tns:StationWeather/Dai
 echo"\n" . '			<p>';
 echo date('D', strtotime($resultfc[2]));
 echo"\n" . '<br>';
-echo"\n" . '			<img src="/img/wxicons/' . $resultfc[5] . '.png">';
+echo"\n" . '			<img src="img/wxicons/' . $resultfc[5] . '.png">';
 echo"\n" . '			<br>';
 echo $resultfc[4];
 echo"\n" . '			<br>';
@@ -181,7 +180,7 @@ $resultfc = $xml->xpath('/tns:RequestAndResponse/response/tns:StationWeather/Dai
 echo"\n" . '			<p>';
 echo date('D', strtotime($resultfc[2]));
 echo"\n" . '<br>';
-echo"\n" . '			<img src="/img/wxicons/' . $resultfc[5] . '.png">';
+echo"\n" . '			<img src="img/wxicons/' . $resultfc[5] . '.png">';
 echo"\n" . '			<br>';
 echo $resultfc[4];
 echo"\n" . '			<br>';
@@ -202,7 +201,7 @@ $resultfc = $xml->xpath('/tns:RequestAndResponse/response/tns:StationWeather/Dai
 echo"\n" . '			<p>';
 echo date('D', strtotime($resultfc[2]));
 echo"\n" . '<br>';
-echo"\n" . '			<img src="/img/wxicons/' . $resultfc[5] . '.png">';
+echo"\n" . '			<img src="img/wxicons/' . $resultfc[5] . '.png">';
 echo"\n" . '			<br>';
 echo $resultfc[4];
 echo"\n" . '			<br>';
@@ -223,7 +222,7 @@ $resultfc = $xml->xpath('/tns:RequestAndResponse/response/tns:StationWeather/Dai
 echo"\n" . '			<p>';
 echo date('D', strtotime($resultfc[2]));
 echo"\n" . '<br>';
-echo"\n" . '			<img src="/img/wxicons/' . $resultfc[5] . '.png">';
+echo"\n" . '			<img src="img/wxicons/' . $resultfc[5] . '.png">';
 echo"\n" . '			<br>';
 echo $resultfc[4];
 echo"\n" . '			<br>';
@@ -239,6 +238,5 @@ echo"\n" . '			</p>';
 echo"\n" . '		</div>';
 echo"\n" . '		';
 echo"\n" . '	</div>';
-
 			
 ?>
