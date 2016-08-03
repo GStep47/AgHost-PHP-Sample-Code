@@ -31,15 +31,14 @@ if (!file_exists("tkn.php") OR (time()-filemtime("tkn.php")) > 800) {
 		$xml = simplexml_load_string($results) or die('failed on simplexml_Load_string loading retrieved data');
 		$result = $xml->xpath('/tns:RequestAndResponse/response/tns:AccountToken/URLEncodedToken');
 		$token = $result[0];
-		
+	
 		//encrypt token for storage
 		$ciphertext = openssl_encrypt($token, 'AES-128-CBC', $key, OPENSSL_RAW_DATA, $iv);
-		
+
 		//write token to file
 		unlink("tkn.php"); //delete existing tkn.php file
 		$thefile = fopen("tkn.php", "w") or die("<br />Unable to open token file!"); //create file
 		fwrite($thefile, $ciphertext); //write token to file
-		//fwrite($thefile, $token); //write token to file
 		fclose($thefile); //close
 
 } else { //read existing token from file
