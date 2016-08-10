@@ -1,0 +1,1 @@
+This is a sample I made for a customer who wanted their website to automatically detect the website visitor address by IP address, and default to the weather for that location. It integrates the IP2Location function with customized versions of the weather sample code.
